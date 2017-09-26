@@ -2,6 +2,19 @@
 
 > A Vue.js project
 
+
+## My notes
+For vs code, go to 
+File-> Preferences -> Settings 
+and add this to get linting in the editor for vue-files.
+
+"eslint.validate": [
+    "javascript",
+    "javascriptreact",
+    "vue"
+],
+
+
 ## Build Setup
 
 ``` bash

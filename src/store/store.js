@@ -24,6 +24,20 @@ const state = {
     ],
 };
 
+const mutations = {
+    addMessage(stat, message) {
+        // mutate state
+       // alert('adding');
+        const mes = {
+            id: 1,
+            message: message.message,
+            right: true,
+        };
+        state.messages.push(mes);
+    },
+
+};
+
 export default new Vuex.Store({
-    state,
+    state, mutations,
 });

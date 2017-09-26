@@ -1,14 +1,24 @@
 <template>
-    <md-card class="card">
+    <md-card class="messageColumn">
         <md-card-actions>
-            <md-layout md-column md-gutter>
-                <md-layout md-flex-xsmall="20">
-                    <md-button>Action</md-button>
+            <md-layout md-column>
+                <md-layout>
+                    <md-button class="mybutton">
+                        <md-avatar>
+                            <img src="../assets/avatar.png" alt="Avatar">
+                        </md-avatar>
+                        Daniel Bönström
+                    </md-button>
                 </md-layout>
-                <md-layout md-flex-xsmall="20">
-                    <md-button>Action</md-button>
+                <md-layout>
+                    <md-button class="mybutton">
+                        <md-avatar>
+                            <img src="../assets/avatar.png" alt="Avatar">
+                        </md-avatar>
+                        Marcela Mederos Fregatto
+                    </md-button>
                 </md-layout>
-            </md-layout>          
+            </md-layout>
         </md-card-actions>
     </md-card>
 </template>
@@ -20,7 +30,10 @@ export default {
 </script>
 
 <style scoped>
-
+    .mybutton{
+        width:100%;
+        text-align:left;
+    }
 </style>
 
 
