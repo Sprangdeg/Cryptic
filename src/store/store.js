@@ -31,7 +31,7 @@ const state = {
         {
             id: 2,
             firstname: 'Marcela',
-            lastname: 'Mederos Fregatto',
+            lastname: 'Fregatto',
             messages: [
                 {
                     id: 1,
