@@ -2,30 +2,24 @@
     <md-card class="messageColumn">
         <md-card-actions>
             <md-layout md-column>
-                <md-layout>
-                    <md-button class="mybutton">
-                        <md-avatar>
-                            <img src="../assets/avatar.png" alt="Avatar">
-                        </md-avatar>
-                        Daniel Bönström
-                    </md-button>
-                </md-layout>
-                <md-layout>
-                    <md-button class="mybutton">
-                        <md-avatar>
-                            <img src="../assets/avatar.png" alt="Avatar">
-                        </md-avatar>
-                        Marcela Mederos Fregatto
-                    </md-button>
-                </md-layout>
+                <div v-for="person in people" :key="person.id">
+                    <person :id="person.id" :firstname="person.firstname" :lastname="person.lastname"></person>
+                </div>
             </md-layout>
         </md-card-actions>
     </md-card>
 </template>
 
 <script>
-export default {
+import person from './Person';
 
+export default {
+    props: ['people'],
+    components: {
+        person,
+    },
+    methods: {
+    },
 };
 </script>
 

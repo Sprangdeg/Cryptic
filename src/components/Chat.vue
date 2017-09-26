@@ -2,10 +2,10 @@
     <div class="chat">
         <md-layout md-gutter>
             <md-layout md-align="end">
-                <people-list></people-list>
+                <people-list :people="getPeople"></people-list>
             </md-layout>
             <md-layout md-align="start" class="messageList">
-                <message-list :messages="messages"></message-list>
+                <message-list :messages="getMessages"></message-list>
             </md-layout>
         </md-layout>
         <md-layout md-align="center">
@@ -27,6 +27,14 @@ export default {
         'people-list': PeopleList,
         'message-box': MessageBox,
         'message-list': MessageList,
+    },
+    computed: {
+        getMessages() {
+            return this.$store.getters.messages;
+        },
+        getPeople() {
+            return this.$store.getters.people;
+        },
     },
 };
 </script>

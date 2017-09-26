@@ -22,7 +22,7 @@ export default {
         };
     },
     methods: {
-        submit: function submit() {
+        submit() {
             if (this.message.trim()) {
                 const action = {
                     type: 'addMessage',
@@ -39,7 +39,7 @@ export default {
                 });
             }
         },
-        scrollToEnd: function scrollToEnd(listSelector) {
+        scrollToEnd(listSelector) {
             // FIX THIS. DON'T USE RELATIVE PATHS. THEY BREAK!
             const container = this.$root.$el.querySelector(listSelector);
             container.scrollTop = container.scrollHeight;

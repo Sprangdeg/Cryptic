@@ -1,7 +1,7 @@
 <template>
     <md-card id="messages">
         <md-list>
-            <md-list-item v-for="message in $store.state.messages" :key="message.id">
+            <md-list-item v-for="message in messages" :key="message.id">
                 <md-avatar>
                     <img src="../assets/avatar.png" alt="Avatar">
                 </md-avatar>
@@ -13,12 +13,12 @@
 </template>
 
 <script>
-import Message from './Message';
+import message from './Message';
 
 export default {
     props: ['messages'],
     components: {
-        message: Message,
+        message,
     },
 };
 </script>
