@@ -9,7 +9,7 @@ const state = {
         {
             id: 1,
             firstname: 'Daniel',
-            lastname: 'Bönström',
+            lastname: 'Larsson',
             messages: [
                 {
                     id: 1,
@@ -30,8 +30,8 @@ const state = {
         },
         {
             id: 2,
-            firstname: 'Marcela',
-            lastname: 'Fregatto',
+            firstname: 'Maggie',
+            lastname: 'Rose',
             messages: [
                 {
                     id: 1,
